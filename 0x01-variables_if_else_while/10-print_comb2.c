@@ -28,12 +28,13 @@ putchar(32);
 else
 {
 putchar(b);
-putchar(32);
+putchar(32,"\n");
 }
 b++;
 }
 b = 48;
 a++;
 }
+putchar("\n");
 return (0);
 }

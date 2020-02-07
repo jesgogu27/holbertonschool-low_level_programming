@@ -22,9 +22,10 @@ putchar(32);
 }
 else
 {
-putchar('$');
+putchar(36);
 }
 x++;
 }
+putchar("\n");
 return (0);
 }

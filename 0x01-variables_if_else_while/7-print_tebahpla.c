@@ -17,5 +17,6 @@ while (alf >= 'a')
 putchar(alf);
 alf--;
 }
+putchar("\n");
 return (0);
 }

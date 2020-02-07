@@ -17,5 +17,6 @@ while (alf <= 'z')
 putchar (alf);
 alf++;
 }
+putchar("\n");
 return (0);
 }
