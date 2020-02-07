@@ -35,6 +35,5 @@ b++;
 b = 48;
 a++;
 }
-putchar('\n');
 return (0);
 }
