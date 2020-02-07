@@ -28,7 +28,7 @@ putchar(32);
 else
 {
 putchar(b);
-putchar(32,"\n");
+putchar(32);
 }
 b++;
 }
