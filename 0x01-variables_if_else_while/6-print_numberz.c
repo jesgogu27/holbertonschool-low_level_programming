@@ -10,10 +10,11 @@
  */
 int main(void)
 {
-int x=48;
-while(x<58){
+int x;
+x = 48;
+while (x < 58){
 putchar(x);
 x++;
 }
-return(0);
+return (0);
 }

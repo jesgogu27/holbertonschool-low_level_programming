@@ -11,15 +11,15 @@
 int main(void)
 {
 char x;
-x=97;
-while(x <= 122)
+x = 97;
+while (x <= 122)
 {
 putchar(x);
 x++;
-if ((x==101) || (x== 113))
+if ((x == 101) || (x == 113))
 {
 x++;
 }
 }
-return 0;
+return (0);
 }

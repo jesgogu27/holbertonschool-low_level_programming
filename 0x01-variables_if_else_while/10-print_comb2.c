@@ -12,23 +12,28 @@ int main(void)
 {
 int a;
 int b;
-a=48;
-b=48;
-while(a<58){
-while(b<58){
+a = 48;
+b = 48;
+while (a < 58)
+{
+while (b < 58)
+{
 putchar(a);
-if(b !=57){
+if (b != 57)
+{
 putchar(b);
 putchar(',');
-putchar(' ');
-} else{
+putchar(32);
+} 
+else
+{
 putchar(b);
-putchar(' ');
+putchar(32);
 }
 b++;
 }
-b=48;
+b = 48;
 a++;
 }
-return(0);        
+return (0);        
 }

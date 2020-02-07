@@ -11,9 +11,10 @@
 int main(void)
 {
 char alf;
-alf='z';
-while( alf >='a' ){
-putchar (alf);
+alf = 'z';
+while (alf >= 'a')
+{
+putchar(alf);
 alf--;
 }
 return (0);

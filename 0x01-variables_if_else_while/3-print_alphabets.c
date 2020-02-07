@@ -14,13 +14,15 @@ char a;
 char A;
 a = 'a';
 A = 'A';
-while ( a <='z' ){
+while (a <= 'z')
+{
 putchar (a);
 a++;
 }
-while ( A<='Z'){
-putchar(A);
+while (A <= 'Z')
+{
+putchar (A);
 A++;
 }
-return 0;
+return (0);
 }

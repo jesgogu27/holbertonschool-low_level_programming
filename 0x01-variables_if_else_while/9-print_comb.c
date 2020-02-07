@@ -10,13 +10,18 @@
  */
 int main(void)
 {
-int x=48;
-while(x<58){
+int x;
+x = 48;
+while (x < 58)
+{
 putchar(x);
-if(x !=57){
+if (x != 57)
+{
 putchar(',');
-putchar(' ');
-} else{
+putchar(32);
+} 
+else
+{
 putchar('$');
 }
 x++;
