@@ -24,6 +24,6 @@ while (x <= 102)
 putchar(x);
 x++;
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }

@@ -24,6 +24,6 @@ while (A <= 'Z')
 putchar (A);
 A++;
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
