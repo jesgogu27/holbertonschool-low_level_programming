@@ -22,8 +22,10 @@ putchar(32);
 }
 else
 {
+break;
 putchar(36);
 }
+
 x++;
 }
 putchar('\n');
