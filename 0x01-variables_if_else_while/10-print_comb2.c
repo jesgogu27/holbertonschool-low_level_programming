@@ -24,7 +24,7 @@ if (b != 57)
 putchar(b);
 putchar(',');
 putchar(32);
-} 
+}
 else
 {
 putchar(b);
@@ -35,5 +35,5 @@ b++;
 b = 48;
 a++;
 }
-return (0);        
+return (0);
 }

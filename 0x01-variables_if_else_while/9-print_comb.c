@@ -19,7 +19,7 @@ if (x != 57)
 {
 putchar(',');
 putchar(32);
-} 
+}
 else
 {
 putchar('$');
