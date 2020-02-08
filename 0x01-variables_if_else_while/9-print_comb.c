@@ -8,34 +8,24 @@
  *
  * Return: Always 0 (Success)
  */
-int
-main (void)
+int main(void)
 {
-int a;
-int b;
-a = 48;
-b = 48;
-while (a < 58)
+int x;
+x = 48;
+while (x < 58)
 {
-while (b < 58)
+putchar(x);
+if (x != 57)
 {
-putchar (a);
-if (b != 57)
-{
-putchar (b);
-putchar (',');
-putchar (32);
+putchar(',');
+putchar(' ');
 }
 else
 {
-putchar (b);
-putchar (32);
+break;
+putchar(36);
 }
-b++;
+x++;
 }
-b = 48;
-a++;
+putchar('\n');
 }
-return (0);
-}
-
