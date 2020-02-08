@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
@@ -7,25 +8,34 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int
+main (void)
 {
-int x;
-x = 48;
-while (x < 58)
-{
-putchar(x);
-if (x != 57)
-{
-putchar(',');
-putchar(32);
-}
-else
-{
-putchar(36);
-putchar('\n');
-break;
-}
-x++;
-}
-return (0);
+  int a;
+  int b;
+  a = 48;
+  b = 48;
+  while (a < 58)
+    {
+      while (b < 58)
+	{
+	  putchar (a);
+	  if (b != 57)
+	    {
+	      putchar (b);
+	      putchar (',');
+	      putchar (32);
+	    }
+	  else
+	    {
+	      putchar (b);
+	      putchar (32);
+	    }
+	  b++;
+	}
+      b = 48;
+      a++;
+    }
+  putchar ('\n');
+  return (0);
 }
