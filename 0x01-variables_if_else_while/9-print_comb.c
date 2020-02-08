@@ -1,8 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
 /**
  * main - Entry point
  *
@@ -11,17 +7,21 @@
 int main(void)
 {
 int x;
-for (x = '0'; i<= '9'; x++)
+x = 48;
+while (x < 58)
 {
 putchar(x);
-if (x == '9)
+if (x != 57)
 {
-putchar('\n');
-break;
-}
 putchar(',');
 putchar(' ');
 }
+else
+{
+break;
+putchar('$');
+}
+x++;
+}
 return (0);
 }
-
