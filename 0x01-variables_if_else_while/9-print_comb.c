@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /* more headers goes there */
 /* betty style doc for function main goes there */
@@ -22,10 +21,10 @@ putchar(32);
 }
 else
 {
-break;
 putchar(36);
+putchar('\n');
+break;
 }
-
 x++;
 }
 return (0);
