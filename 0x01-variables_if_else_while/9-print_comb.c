@@ -18,8 +18,8 @@ putchar(' ');
 }
 else
 {
+putchar(x);
 break;
-putchar('$');
 }
 x++;
 }
