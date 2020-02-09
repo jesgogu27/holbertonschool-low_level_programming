@@ -18,7 +18,7 @@ putchar(' ');
 }
 else
 {
-putchar(x);
+putchar('\n');
 break;
 }
 x++;
