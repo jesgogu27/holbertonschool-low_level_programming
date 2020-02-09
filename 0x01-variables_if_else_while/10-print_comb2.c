@@ -19,23 +19,24 @@ while (a < 58)
 {
 while (b < 58)
 {
-putchar (a);
+putchar(a);
 if (b != 57)
 {
-putchar (b);
-putchar (',');
-putchar (32);
+putchar(b);
+putchar(',');
+putchar(32);
 }
 else
 {
-putchar (b);
-putchar (32);
+putchar(b);
+putchar(32);
 }
 b++;
 }
 b = 48;
 a++;
 }
+putchar('\n');
 return (0);
 }
 
