@@ -1,0 +1,7 @@
+#include "holberton.c"
+
+void jack_bauer(void){
+
+  _putchar();
+  
+}
