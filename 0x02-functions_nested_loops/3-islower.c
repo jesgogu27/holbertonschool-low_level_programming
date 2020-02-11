@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * main - Entry point
  *
@@ -7,12 +6,13 @@
  */
 int _islower(int c)
 {
-	if ((c >= 'a') && (c <= 'z'))
+
+if ((c >= 'a') && (c <= 'z'))
 {
-	return (1);
+return (1);
 }
-	else
+else
 {
-	return (0);
+return (0);
 }
 }
