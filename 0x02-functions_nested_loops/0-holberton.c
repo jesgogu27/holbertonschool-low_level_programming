@@ -5,14 +5,14 @@
  */
 int main(void)
 {
-	char name [9]="Holberton";
-	int a;
-	
-	for (a=0; a<9; a++)
-	{
-		_putchar(name[a]);
-	} 
-	_putchar('\n');
-	return (0);
+char name [9] = "Holberton";
+int a;
+for (a = 0; a < 9; a++)
+{
+_putchar(name[a]);
 }
+_putchar('\n');
+return (0);
+}
+
 
