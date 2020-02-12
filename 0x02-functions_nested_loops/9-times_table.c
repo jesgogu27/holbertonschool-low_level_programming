@@ -27,7 +27,7 @@ _putchar(x % 10 + '0');
 }
 else
 {
-_putchar(',');
+_putchar(' ');
 _putchar(x + '0');
 }
 if (b != 9)
