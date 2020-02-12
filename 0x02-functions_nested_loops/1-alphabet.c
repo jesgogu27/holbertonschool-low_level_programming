@@ -15,6 +15,5 @@ _putchar(alf);
 alf++;
 }
 _putchar('\n');
-prueba
 }
 
