@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * main - Entry point
- *
+ * _isalpha - checks for alphabetic character
+ *@c: int c
  * Return: Always 0 (Success)
  */
 

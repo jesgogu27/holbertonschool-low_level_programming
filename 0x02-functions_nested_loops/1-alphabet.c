@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - Entry point
+ * print_alphabet - Print alphabet
  *
  * Return: Always 0 (Success)
  */
@@ -15,5 +15,6 @@ _putchar(alf);
 alf++;
 }
 _putchar('\n');
+prueba
 }
 
