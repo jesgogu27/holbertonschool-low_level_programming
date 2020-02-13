@@ -1,0 +1,8 @@
+#include "holberton.h"
+/**
+ * print_numbers - checks for a digit (0 through 9)
+ * @c: first integer
+ * Return: result
+ */
+
+void print_numbers(void)
