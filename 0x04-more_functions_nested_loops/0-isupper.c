@@ -14,10 +14,10 @@ a = c;
 
 if ((a >= 'a') && (a <= 'z'))
 {
-return (1);
+return (0);
 }
 else
 {
-return (0);
+return (1);
 }
 }
