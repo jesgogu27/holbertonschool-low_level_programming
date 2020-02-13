@@ -1,0 +1,18 @@
+#include "holberton.h"
+
+/**
+ *
+ *
+ */
+
+int mul(int a, int b)
+{
+  int x;
+  int z;
+  int r;
+
+  x = a;
+  z = b;
+
+  r = x * z;
+  
