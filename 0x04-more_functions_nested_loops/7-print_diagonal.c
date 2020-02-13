@@ -14,20 +14,17 @@ a = n;
 m = n;
 f = n;
 
-for (f = 0; f < a; f++)
+for (f = 0; f <= a; f++)
 {
 c = a - m;
-for (b = 0; b < c; b++)
+for (b = 0; b <= c; b++)
 {
 _putchar(' ');
 r = c - b;
-if ((r == 1) && (r > 1))
-{
-_putchar(92);
-}
 if (r == 1)
 {
 _putchar(92);
+break;
 }
 }
 _putchar('\n');
