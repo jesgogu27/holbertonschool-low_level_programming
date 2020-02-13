@@ -13,7 +13,6 @@ int a, b, c, f, r, m;
 a = n;
 m = n;
 f = n;
-  
 
 for (f = 0; f < a; f++)
 {
