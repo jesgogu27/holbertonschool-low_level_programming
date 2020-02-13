@@ -12,12 +12,12 @@ int _isupper(int c)
 int a;
 
 a = c;
-if ((a >= 'a') && (a <= 'z'))
+if ((a >= 'A') && (a <= 'Z'))
 {
-return (0);
+return (1);
 }
 else
 {
-return (1);
+return (0);
 }
 }
