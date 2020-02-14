@@ -1,22 +1,18 @@
 #include <stdio.h>
 /**
- * main - checks for uppercase character.
+ * main - function that checks for uppercase character.
  * Return: 0
  */
 int main(void)
 {
-int a = 1;
-while (a <= 100)
+int h = 1;
+while (h <= 100)
 {
-if ((a % 3 == 0) && (a % 5 == 0))
-{
+if (h % 3 == 0 && h % 5 == 0)
 printf("FizzBuzz ");
-}
-else
-if (a % 5 == 0)
-}
+else if (h % 5 == 0)
 {
-if (a == 100)
+if (h == 100)
 {
 printf("Buzz");
 printf("\n");
@@ -24,13 +20,11 @@ printf("\n");
 else
 printf("Buzz ");
 }
-else
-if (a % 3 == 0)
+else if (h % 3 == 0)
 printf("Fizz ");
 else
-printf("%d ", a);
-a++;
+printf("%d ", h);
+h++;
 }
 return (0);
 }
-
