@@ -1,0 +1,21 @@
+#include "holberton"
+
+/**
+ *void _puts(char *str)
+ *@str: string 
+ *
+ *Return: 0
+ */
+
+void _puts(char *str)
+{
+  int x;
+x = 0;
+
+while (*str != '\0')
+{
+s++;
+ _putchar(s + 'a');
+}
+return (0);
+}
