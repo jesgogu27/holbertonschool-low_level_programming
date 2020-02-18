@@ -1,7 +1,5 @@
 #include "holberton.h"
-
 void swap(char *a, char *b);
-
 int _strlen(char *s);
 
 /**
@@ -9,6 +7,7 @@ int _strlen(char *s);
  *@s: string
  *Return: Void
  */
+
 void rev_string(char *s)
 {
 
@@ -25,9 +24,8 @@ swap(s + i, s + x - i - 1);
 }
 }
 
-
 /**
- *sawp -  chance values
+ *swap - chance values
  *@a: string
  *@b: string
  *Return: Void
