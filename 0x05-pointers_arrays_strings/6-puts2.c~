@@ -1,0 +1,28 @@
+#include "holberton.h"
+
+
+void puts2(char *str)
+{
+  int z;
+  
+  z= _puts(str);
+  _putchar(z);
+}
+
+int  _puts(char *str)
+{
+char a;
+ int x;
+while (*str != '\0')
+{
+a = *str;
+ 
+
+ if(a % 2 == 0)
+   {
+     print (str);
+   }
+str++;
+}
+
+}
