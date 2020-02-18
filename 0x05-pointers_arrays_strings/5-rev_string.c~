@@ -1,0 +1,12 @@
+#include "holberton.h"
+
+/**
+ *rev_string -  that reverses a string
+ *@s: string
+ *Return: Void
+ */
+
+void rev_string(char *s)
+{
+  
+}
