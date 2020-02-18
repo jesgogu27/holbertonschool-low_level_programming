@@ -1,20 +1,6 @@
 #include "holberton.h"
 
-
-/**
- *sawp -  chance values
- *@a: string
- *@b: string 
- *Return: Void
- */
-
 void swap(char *a, char *b);
-
-/**
- *_strlen -  count string
- *@s: string
- *Return: Void
- */
 
 int _strlen(char *s);
 
@@ -25,21 +11,27 @@ int _strlen(char *s);
  */
 void rev_string(char *s)
 {
-  
-int x, i;
 
+int x, i;
 
 x = _strlen(s);
 
-if (x > 2) {
-
-for(i = 0;  i < x/2; i++)
+if (x > 2)
 {
+for (i = 0;  i < x / 2; i++)
+{
+swap(s + i, s + x - i - 1);
+}
+}
+}
 
- swap(s + i, s + x - i - 1 );
-}
-}
-}
+
+/**
+ *sawp -  chance values
+ *@a: string
+ *@b: string
+ *Return: Void
+ */
 
 void swap(char *a, char *b)
 {
@@ -50,6 +42,11 @@ z = *a;
 *b = z;
 }
 
+/**
+ *_strlen -  count string
+ *@s: string
+ *Return: Void
+ */
 int _strlen(char *s)
 {
 
