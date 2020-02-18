@@ -24,7 +24,7 @@ while (x >= 0)
 {
 
 a = *s;
-if(a != '\0')
+if (a != '\0')
 {
 _putchar(a);
 }
