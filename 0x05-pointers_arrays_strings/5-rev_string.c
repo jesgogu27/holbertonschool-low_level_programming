@@ -2,13 +2,27 @@
 
 
 /**
+ *sawp -  chance values
+ *@a: string
+ *@b: string 
+ *Return: Void
+ */
+
+void swap(char *a, char *b);
+
+/**
+ *_strlen -  count string
+ *@s: string
+ *Return: Void
+ */
+
+int _strlen(char *s);
+
+/**
  *rev_string -  that reverses a string
  *@s: string
  *Return: Void
  */
-void swap(char *a, char *b);
-int _strlen(char *s);
-
 void rev_string(char *s)
 {
   
