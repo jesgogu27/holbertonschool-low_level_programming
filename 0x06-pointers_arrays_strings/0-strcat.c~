@@ -1,0 +1,37 @@
+#include "holberton.h"
+
+int _strlen(char *s);
+
+char *_strcat(char *dest, char *src)
+{
+  int tam, tam2;
+
+  tam = _strlen(dest);
+  tam2 = _strlen(src); 
+
+
+  printf("%d\n", tam);
+  printf("%d\n", tam2);
+  
+ 
+}
+
+
+/**
+ *_strlen -  count string
+ *@s: string
+ *Return: Void
+ */
+int _strlen(char *s)
+{
+
+int x;
+x = 0;
+
+while (*s != '\0')
+{
+s++;
+x++;
+}
+return (x);
+}
