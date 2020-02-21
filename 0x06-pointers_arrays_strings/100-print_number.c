@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * print_number - Print the last digit
- *@n: Number that is going to be splited
+ *@n: number received
  * Return: Return the last digit
  */
 void print_number(int n)
