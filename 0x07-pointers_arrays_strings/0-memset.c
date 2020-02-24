@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *_memset: fills n bytes
+ *_memset - standard library provides a similar function: memset.
  *@s: pointer received.
  *@b: Character received.
  *@n: value of memory
