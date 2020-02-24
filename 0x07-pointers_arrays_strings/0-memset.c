@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- *_memset: fills n bytes of the memory area with the constant byte b
+ *_memset: fills n bytes
  *@s: pointer received.
- *@char: Character received.
- *@int: value of memory
+ *@b: Character received.
+ *@n: value of memory
+ *Return: char.
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -17,5 +18,5 @@ for (i = 0; i < n; i++)
 {
 p[i] = b;
 }
-return (0);
+return (p);
 }
