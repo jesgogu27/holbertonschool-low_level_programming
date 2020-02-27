@@ -17,7 +17,7 @@ return (_prime(n, 2, n / 2));
  * @n: number received
  * @i: cont
  * @t: terminate
- * Return: operation 
+ * Return: operation
  */
 
 int _prime(int n, int i, int t)
