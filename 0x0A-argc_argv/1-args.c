@@ -12,7 +12,12 @@
 int main(int argc, __attribute__((unused)) char *argv[])
 {
 int i, sum;
-if (argc > 1)
+sum = 0;
+if (argc == 1)
+{
+printf("%d\n", sum);
+}
+else if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
