@@ -10,14 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum;
+int i;
 
-	sum = 0;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s\n", argv[i]);
-		sum += 1;
-	}
-	return (1);
+for (i = 0; i < argc; i++)
+{
+printf("%s\n", argv[i]);
+}
+return (1);
 }
