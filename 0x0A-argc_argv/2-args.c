@@ -5,7 +5,7 @@
  *main - received two parameters
  *@argc: count.
  *@argv: vector.
- *Return: always 0.
+ *Return: value
  */
 int main(int argc, char *argv[])
 {
