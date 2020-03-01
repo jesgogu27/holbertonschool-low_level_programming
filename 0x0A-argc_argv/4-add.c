@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -11,21 +12,31 @@
 int main(int argc, char *argv[])
 {
 
-int i, r;
+int r;
+int i, j;
 
-for (i = 1; i < argc; i++)
+r = 0;
+if (argc < 2)
 {
-if (*argv[i] >= 48  && *argv[i] <= 57)
-{
-r += atoi(argv[i]);
+printf("0\n");
 }
 else
 {
+for (i = 1; i < argc; i++)
+{
+j = 0;
+while (argv[i][j] != '\0')
+{
+if (argv[i][j] < 48 || argv[i][j] > 59)
+{
 printf("Error\n");
 return (1);
-break;
 }
+j++;
 }
-printf("%d\n", r);
+r = r + atoi(argv[i]);
+}
+printf("%i\n", r);
+}
 return (0);
 }
