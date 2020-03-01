@@ -1,20 +1,18 @@
-#include <stdlib.h>
+#include "holberton.h"
 #include <stdio.h>
 
 /**
- *main - received two parameters
- *@argc: count
- *@argv: vector
- *Return: value
+ * main - Entry point
+ * @argc: Argv length
+ * @argv: Arrays of array of characters
+ * Return: Return 0
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-int i;
+	int i;
 
-for (i = 0; i < argc; i++)
-{
-printf("%s\n", argv[i]);
-}
-return (1);
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
+
+	return (0);
 }
