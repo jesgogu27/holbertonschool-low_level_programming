@@ -1,5 +1,7 @@
-#ifndef holberton_h
-#define holberton_h
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
+#include <stdio.h>
 
 int _putchar(char c);
 int _islower(int c);
