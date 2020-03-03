@@ -24,5 +24,6 @@ char *create_array(unsigned int size, char c)
 	{
 		l[i] = c;
 	}
+	l[i] = '\0';
 	return (l);
 }
