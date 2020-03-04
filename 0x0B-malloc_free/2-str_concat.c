@@ -19,10 +19,10 @@ char *str_concat(char *s1, char *s2)
 	i = 0;
 
 	if (s1 == NULL)
-		return (" ");
+		s1 = "";
 
 	if (s2 == NULL)
-		return (" ");
+		s2 = "";
 
 	u = _strlen(s1);
 	o = _strlen(s2);
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 
 	s3 = malloc(ts3);
 
-	if (s3 == NULL)
+	if (s3 == 0)
 		return (NULL);
 
 	for (x = 0; x < u; x++)
