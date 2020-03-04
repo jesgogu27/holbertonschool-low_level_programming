@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 
 	ts3 = u + o;
 
-	s3 = malloc(ts3);
+	s3 = malloc(ts3 + 1);
 
 	if (s3 == 0)
 		return (NULL);
