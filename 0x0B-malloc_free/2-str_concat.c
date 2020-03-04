@@ -19,10 +19,10 @@ char *str_concat(char *s1, char *s2)
 	i = 0;
 
 	if (s1 == NULL)
-		return (NULL);
+		return (" ");
 
 	if (s2 == NULL)
-		return (NULL);
+		return (" ");
 
 	u = _strlen(s1);
 	o = _strlen(s2);
