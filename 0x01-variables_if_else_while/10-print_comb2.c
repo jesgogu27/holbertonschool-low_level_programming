@@ -10,10 +10,11 @@
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
 	int a;
 	int b;
+
 	a = 48;
 	b = 48;
 	while (a < 58)
