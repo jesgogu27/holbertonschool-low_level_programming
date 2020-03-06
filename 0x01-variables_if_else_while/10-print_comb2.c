@@ -30,7 +30,7 @@ int main(void)
 			else
 			{
 				putchar(b);
-				putchar(32);
+				
 			}
 			b++;
 		}
