@@ -11,7 +11,8 @@
 
 int main(void)
 {
-	int a;
+    
+    int a;
 	int b;
 
 	a = 48;
@@ -30,6 +31,7 @@ int main(void)
 			else
 			{
 				putchar(b);
+                putchar(32);
 				
 			}
 			b++;
