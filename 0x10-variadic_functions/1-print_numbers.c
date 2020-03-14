@@ -28,10 +28,10 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 a = va_arg(args, int);
-printf("%i", a);
+_putchar("%i", a);
 if (n != i + 1)
-printf("%s", separator);
+_putchar("%s", separator);
 }
-printf("\n");
+_putchar("\n");
 va_end(args);
 }
