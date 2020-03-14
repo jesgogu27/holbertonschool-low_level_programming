@@ -16,12 +16,6 @@ char *a;
 va_list args;
 va_start(args, n);
 
-
-if (separator == NULL)
-{
-return;
-}
-
 for (i = 0; i < n; i++)
 {
 a = va_arg(args, char *);
@@ -33,7 +27,7 @@ else
 {
 printf("%s", a);
 }
-if (n != i + 1)
+if ((n != i + 1) && (separator != NULL))
 printf("%s", separator);
 }
 printf("\n");
