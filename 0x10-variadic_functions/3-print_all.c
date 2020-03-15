@@ -64,12 +64,9 @@ int i, j;
 char *separator = "";
 va_list args;
 
-cf ptr[] = {
-{"c", p_carac},
-{"i", p_ent},
-{"f", p_flot},
-{"s", p_cad},
-};
+cf ptr[];
+
+ptr = { {"c", p_carac}, {"i", p_ent}, {"f", p_flot}, {"s", p_cad}, };
 
 va_start(args, format);
 
