@@ -4,44 +4,44 @@
 
 /**
  * p_carac - print character
- * @args: data
+ * @c: data
  * Return: Nothing
  */
-void p_carac(va_list args)
+void p_carac(va_list c)
 {
-	printf("%c", va_arg(args, int));
+	printf("%c", va_arg(c, int));
 }
 
 /**
  * p_ent - print integer
- * @args: data
+ * @f: data
  * Return: Nothing
  */
-void p_ent(va_list args)
+void p_ent(va_list f)
 {
-	printf("%i", va_arg(args, int));
+	printf("%i", va_arg(f, int));
 }
 
 /**
  * p_flot - print float
- * @args: data
+ * @f: data
  * Return: Nothing
  */
-void p_flot(va_list args)
+void p_flot(va_list f)
 {
-	printf("%f", va_arg(args, double));
+	printf("%f", va_arg(f, double));
 }
 
 /**
  * p_cad - print string
- * @args: data
+ * @s: data
  * Return: Nothing
  */
-void p_cad(va_list args)
+void p_cad(va_list s)
 {
 	char *j;
 
-	j = va_arg(args, char *);
+	j = va_arg(s, char *);
 
 	if (j == NULL)
 	{
