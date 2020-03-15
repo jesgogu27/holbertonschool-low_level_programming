@@ -39,9 +39,9 @@ void p_flot(va_list args)
  */
 void p_cad(va_list args)
 {
-
 	char *j;
-	j = va_arg(args, char*);
+
+	j = va_arg(args, char *);
 
 	if (j == NULL)
 	{
@@ -59,7 +59,6 @@ void p_cad(va_list args)
 
 void print_all(const char * const format, ...)
 {
-
 	int i, j;
 	char *separator = "";
 	va_list args;
@@ -78,7 +77,6 @@ void print_all(const char * const format, ...)
 
 	while (format != NULL && *(format + i) != '\0')
 	{
-
 		while (j < 4)
 		{
 			if (ptr[j].cacrec[0] == format[i])
