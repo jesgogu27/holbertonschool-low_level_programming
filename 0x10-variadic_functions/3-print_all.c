@@ -45,7 +45,7 @@ void p_cad(va_list s)
 
 	if (j == NULL)
 	{
-		printf("(nill)");
+		printf("(nil)");
 		return;
 	}
 	printf("%s", j);
