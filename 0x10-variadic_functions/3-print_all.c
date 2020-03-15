@@ -93,7 +93,6 @@ j++;
 i++;
 j = 0;
 }
-
-va_end(args);
 printf("\n");
+va_end(args);
 }
