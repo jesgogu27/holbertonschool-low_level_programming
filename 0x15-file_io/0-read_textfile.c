@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <fcntl.h>
-#include <unistd.h>
+#include "holberton.h"
 
 /**
 *read_textfile - read file.
@@ -12,29 +10,29 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-size_t nr_bytes;
-char buf[1024];
+ssize_t nr_bytes;
+char *buf;
 int fd, r;
 
+buf = malloc(sizeof(char) * letters);
 fd = open(filename, O_RDONLY);
 
 if (fd == -1)
 {
-printf("Error al abrir el archivo");
 return (0);
 }
 else
 {
 nr_bytes = read(fd, buf, letters);
-close(fd);
-if (nr_bytes == 0)
+if (nr_bytes == -1)
 {
-printf("archivo vacio");
+return (0);
 }
 else
 {
-printf("%s\n", buf);
-r = (int)nr_bytes;
+r = write(STDOUT_FILENO, buf, nr_bytes);
+if (r == -1)
+return (0);
 }
 }
 return (r);
