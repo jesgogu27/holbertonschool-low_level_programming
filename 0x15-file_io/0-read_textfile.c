@@ -35,5 +35,6 @@ if (r == -1)
 return (0);
 }
 }
+close(fd);
 return (r);
 }
