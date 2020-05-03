@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- *print_dlistint - print all elements a double linked list
+ *dlistint_len - print all elements a double linked list
  *@h: header of list
  *Return: number of nodes
  */
 
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	const dlistint_t *nAux = h;
 	size_t count = 0;
@@ -14,7 +14,6 @@ size_t print_dlistint(const dlistint_t *h)
 	while (nAux != NULL)
 	{
 		count++;
-		printf("%u\n", nAux->n);
 		nAux = nAux->next;
 	}
 	return (count);
