@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-/*int _strlen(char *s);*/
+
 
 /**
  *_strcat - concatent a string
@@ -22,24 +22,3 @@ dest[tamH + i] =  src[i];
 }
 return (dest);
 }
-
-/**
- *_strlen -  count string
- *@s: string
- *Return: Void
- */
-/*
-int _strlen(char *s)
-{
-
-int x;
-x = 0;
-
-while (*s != '\0')
-{
-s++;
-x++;
-}
-return (x);
-}
-*/
