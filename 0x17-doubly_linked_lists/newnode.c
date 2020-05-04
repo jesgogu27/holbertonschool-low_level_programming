@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 
 /**
@@ -9,9 +9,10 @@
 
 dlistint_t *newnode(int n)
 {
-	dlistint_t new = NULL;
+	dlistint_t* new = NULL;
+	
 
-	new = (dlistint_t *)malloc(sizeof(dlistint_t));
+	new = (dlistint_t*)malloc(sizeof(dlistint_t));
 	if (new != NULL)
 	{
 		new->n = n;
