@@ -39,8 +39,6 @@ int main(void)
 
 		a = a + 1;
 		b = 48;
-
-		putchar('\n');
 	}
 	return (0);
 }
