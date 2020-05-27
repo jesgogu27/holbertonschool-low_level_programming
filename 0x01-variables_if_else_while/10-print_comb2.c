@@ -1,5 +1,3 @@
-
-#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
@@ -11,8 +9,8 @@
 
 int main(void)
 {
-    
-    int a;
+
+	int a;
 	int b;
 
 	a = 48;
@@ -20,25 +18,29 @@ int main(void)
 
 	while (a < 58)
 	{
+
 		while (b < 58)
 		{
 			putchar(a);
-			if (b != 57)
+			if ((b == 57) && (a == 57))
 			{
 				putchar(b);
-				putchar(',');
-				putchar(32);
+				break;
 			}
 			else
 			{
 				putchar(b);
-                putchar(32);
-				
+				putchar(',');
+				putchar(32);
+				b = b + 1;
 			}
-			b++;
+
 		}
+
+		a = a + 1;
 		b = 48;
-		a++;
+
+		putchar('\n');
 	}
 	return (0);
 }
