@@ -10,38 +10,41 @@
 int main(void)
 {
 
-	int a;
-	int b;
+    int a;
+    int b;
 
-	a = 48;
-	b = 48;
+    a = 48;
+    b = 48;
 
-	while (a < 58)
-	{
+    while (a < 58)
+    {
 
-		while (b < 58)
-		{
+        while (b < 58)
+        {
 
-			if ((b != a) && (a < b))
-			{
-				putchar(a);
-				putchar(b);
-				putchar(',');
-				putchar(32);
-			}
+            if ((b != a) && (a < b))
+            {
+                putchar(a);
+                putchar(b);
+                
+                if ((b == 57) && (a == 56))
+                {
+                    putchar('\n');
+                    break;
+                }
+                else 
+                {
+                    putchar(',');
+                    putchar(32);
+                }
+            }
+            b = b + 1;
+        }
 
-			if ((b == 57) && (a == 57))
-			{
-				putchar('\n');
-			}
+        a = a + 1;
+        b = 48;
 
-			b = b + 1;
-		}
+    }
 
-		a = a + 1;
-		b = 48;
-
-	}
-
-	return (0);
+    return (0);
 }
