@@ -22,18 +22,18 @@ int main(void)
 		while (b < 58)
 		{
 			putchar(a);
+			putchar(b);
 			if ((b == 57) && (a == 57))
 			{
-				putchar(b);
-				break;
+				putchar('\n');
 			}
 			else
 			{
-				putchar(b);
 				putchar(',');
 				putchar(32);
-				b = b + 1;
+				
 			}
+			b = b + 1;
 
 		}
 
@@ -41,6 +41,6 @@ int main(void)
 		b = 48;
 
 	}
-	putchar('\n');
+	
 	return (0);
 }
