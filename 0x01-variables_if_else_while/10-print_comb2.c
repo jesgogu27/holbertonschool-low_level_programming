@@ -18,7 +18,6 @@ int main(void)
 
 	while (a < 58)
 	{
-
 		while (b < 58)
 		{
 			putchar(a);
@@ -31,7 +30,7 @@ int main(void)
 			{
 				putchar(',');
 				putchar(32);
-				
+
 			}
 			b = b + 1;
 
@@ -41,6 +40,6 @@ int main(void)
 		b = 48;
 
 	}
-	
+
 	return (0);
 }
