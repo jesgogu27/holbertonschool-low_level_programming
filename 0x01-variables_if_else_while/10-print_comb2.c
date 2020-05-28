@@ -18,7 +18,6 @@ int main(void)
 
 	while (a < 58)
 	{
-
 		while (b < 58)
 		{
 			putchar(a);
@@ -36,7 +35,6 @@ int main(void)
 			}
 
 		}
-
 		a = a + 1;
 		b = 48;
 	}
