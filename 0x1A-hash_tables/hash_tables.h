@@ -14,24 +14,22 @@
 
 typedef struct hash_node
 {
-    char *key;
-    char *value;
-    struct has_node *next;
-}hash_node_t;
-
+	char *key;
+	char *value;
+	struct has_node *next;
+} hash_node_t;
 
 /**
 *struct hash_table - data structure of the hash table
 *@size: size of array.
-*@array: pointer to firts node of the linkend list 
-*
+*@array: pointer to firts node of the linkend list
 */
 
 typedef struct hash_table
 {
-    unsigned long int size;
-    hash_node_t **array;    
-}hash_table_t;
+	unsigned long int size;
+	hash_node_t **array;
+} hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
 
