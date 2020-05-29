@@ -1,17 +1,16 @@
-#ifndef HASH_TABLES_H
-#define HASH_TABLES_H
+#ifndef _HASH_TABLES_H_
+#define _HASH_TABLES_H_
 
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 
 /**
-*struct hash_node - node of a hash table
+*struct hash_node - node of a hash table.
 *@key: unique in the hash table.
-*@value: value identificate by key
-*@next: pointer to the next node of the list
+*@value: value identificate by key.
+*@next: pointer to the next node of the list.
 */
-
 
 typedef struct hash_node
 {
@@ -28,12 +27,10 @@ typedef struct hash_node
 *
 */
 
-
 typedef struct hash_table
 {
     unsigned long int size;
-    hash_node_t **array;
-    
+    hash_node_t **array;    
 }hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
