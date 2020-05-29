@@ -5,7 +5,12 @@
 #include <string.h>
 #include <stdio.h>
 
-
+/**
+*struct hash_node - node of a hash table
+*@key: unique in the hash table.
+*@value: value identificate by key
+*@next: pointer to the next node of the list
+*/
 
 
 typedef struct hash_node
@@ -14,6 +19,15 @@ typedef struct hash_node
     char *value;
     struct has_node *next;
 } hash_node_t;
+
+
+/**
+*struct hash_table - data structure of the hash table
+*@size: size of array.
+*@array: pointer to firts node of the linkend list 
+*
+*/
+
 
 typedef struct hash_table
 {
