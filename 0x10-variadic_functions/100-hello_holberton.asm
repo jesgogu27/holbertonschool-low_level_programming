@@ -11,7 +11,7 @@ main:
 	mov rax, 1
 	mov rdi, 1
 	mov rsi, msg
-	mov rdx, 14
+	mov rdx, 16
 	syscall
 
 	mov rax, 60
