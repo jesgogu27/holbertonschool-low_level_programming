@@ -3,7 +3,7 @@
 void __attribute__((constructor)) tortoise();
 
 /**
- * before_main - prints before main
+ * tortoise - prints before main
  * Return: Null
  */
 void tortoise(void)
