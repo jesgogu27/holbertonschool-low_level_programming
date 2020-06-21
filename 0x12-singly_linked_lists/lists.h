@@ -5,7 +5,6 @@
 #include <string.h>
 #include <stdio.h>
 
-size_t print_list(const list_t *h);
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -20,7 +19,8 @@ typedef struct list_s
     char *str; /* value*/
     unsigned int len; /*size*/
     struct list_s *next; /*pointer to netx node*/
-} list_t;
+}list_t;
 
+size_t print_list(const list_t *h);
 
 #endif
