@@ -1,7 +1,7 @@
 SECTION .model
 SECTION .stack
 SECTION .data
-	mjs db "Holberton School$"
+	mjs db "Hello, Holberton$"
 
 SECTION .code
 	main
