@@ -1,20 +1,18 @@
 section .data
 
-msg db "Hello, Holberton",10
-
+msg db "Hello, Holberton",0xA,0xD
+len equ $ - msg
 
 section .text
 	global main
 
 main:
 
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, 16
-	int 21h
-	syscall
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, msg
+	mov edx, len
+	int 0x80
 
-	mov rax, 60
-	mov rdi, 0
-	syscall
+	mov eax, 1
+	int 0x80
