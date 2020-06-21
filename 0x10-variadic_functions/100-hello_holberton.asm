@@ -1,17 +1,18 @@
-SECTION .model
-SECTION .stack
-SECTION .data
-	mjs db "Hello, Holberton", "$"
+section .data
 
-SECTION .code
-			main
-				MOV AX, SEG @data
-				MOV DS, AX
+msg db "Hello, Holberton",0xA,0xD
+len equ $ - msg
 
-				MOV AH, 09h
-				lea dx, msj
-				int 21h
-		
+section .text
+	global _start
 
-SECTION .ENDS
- 	END main
+_start
+
+	mov eax, 4
+	mov ebx, 1
+	mov ecx, msg
+	mov edx, len
+	int 0x80
+
+	mov eax, 1
+	int 0x80
